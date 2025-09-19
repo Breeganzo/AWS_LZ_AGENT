@@ -1,0 +1,153 @@
+<mxfile host="app.diagrams.net" modified="2024-09-19T00:00:00.000Z" agent="5.0" etag="abc" version="24.1.0">
+  <diagram id="saas-hierarchical" name="SaaS Hierarchical Architecture">
+    <mxGraphModel dx="2000" dy="1500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Title Box -->
+        <mxCell id="2" value="Requirement: Hosting 5 SaaS applications in 4 different environments\nAssumption: Serverless applications and PaaS DB" style="text;html=1;align=right;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fillColor=#f8f9fa;strokeColor=#dee2e6;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="50" width="320" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Root SaaS Apps -->
+        <mxCell id="3" value="SaaS Apps" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/aws4/ManagementGovernance/AWS_Organizations.svg;" vertex="1" parent="1">
+          <mxGeometry x="650" y="150" width="60" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Non-Prod OU -->
+        <mxCell id="4" value="Non-Prod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cfe2ff;strokeColor=#0d6efd;verticalAlign=top;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="280" width="400" height="400" as="geometry"/>
+        </mxCell>
+        
+        <!-- Prod OU -->
+        <mxCell id="5" value="Prod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d1e7dd;strokeColor=#0f5132;verticalAlign=top;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="280" width="400" height="400" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/aws4/ManagementGovernance/AWS_Organizations.svg;" vertex="1" parent="1">
+          <mxGeometry x="180" y="240" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="220" as="sourcePoint"/>
+            <mxPoint x="200" y="240" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffc107;strokeColor=#ffc107;" vertex="1" parent="1">
+          <mxGeometry x="190" y="285" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="Dev" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="310" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="Dev" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;verticalAlign=top;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="340" width="80" height="300" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Dedicated\nCluster\nVNET" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff3cd;strokeColor=#856404;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="165" y="380" width="70" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="Dedicated\nPaaS\nVNET" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff3cd;strokeColor=#856404;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="165" y="500" width="70" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/aws4/ManagementGovernance/AWS_Organizations.svg;" vertex="1" parent="1">
+          <mxGeometry x="360" y="240" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="220" as="sourcePoint"/>
+            <mxPoint x="380" y="240" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffc107;strokeColor=#ffc107;" vertex="1" parent="1">
+          <mxGeometry x="370" y="285" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" value="QA" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="310" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" value="QA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;verticalAlign=top;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="340" width="80" height="300" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" value="Dedicated\nCluster\nVNET" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff3cd;strokeColor=#856404;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="345" y="380" width="70" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" value="Dedicated\nPaaS\nVNET" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff3cd;strokeColor=#856404;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="345" y="500" width="70" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/aws4/ManagementGovernance/AWS_Organizations.svg;" vertex="1" parent="1">
+          <mxGeometry x="760" y="240" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="220" as="sourcePoint"/>
+            <mxPoint x="780" y="240" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffc107;strokeColor=#ffc107;" vertex="1" parent="1">
+          <mxGeometry x="770" y="285" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" value="Pre-Prod" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="310" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" value="Pre-Prod App5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#2e7d32;verticalAlign=top;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="340" width="120" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="25" value="Dedicated\nCluster\nVNET" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d4edda;strokeColor=#155724;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="740" y="380" width="100" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="26" value="Dedicated\nPaaS\nVNET" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d4edda;strokeColor=#155724;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="740" y="480" width="100" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="27" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/aws4/ManagementGovernance/AWS_Organizations.svg;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="240" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="28" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="220" as="sourcePoint"/>
+            <mxPoint x="1020" y="240" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffc107;strokeColor=#ffc107;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="285" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="30" value="Prod" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="310" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="31" value="Prod App5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#2e7d32;verticalAlign=top;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="340" width="120" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="32" value="Dedicated\nCluster\nVNET" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d4edda;strokeColor=#155724;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="980" y="380" width="100" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="33" value="Dedicated\nPaaS\nVNET" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d4edda;strokeColor=#155724;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="980" y="480" width="100" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="34" value="AWS Control Tower" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/aws4/ManagementGovernance/AWS_Control_Tower.svg;" vertex="1" parent="1">
+          <mxGeometry x="750" y="130" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="35" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="30" target="6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="200" as="sourcePoint"/>
+            <mxPoint x="400" y="250" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="36" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="31" target="13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="200" as="sourcePoint"/>
+            <mxPoint x="400" y="250" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="37" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="32" target="20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="200" as="sourcePoint"/>
+            <mxPoint x="400" y="250" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="33" target="27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="200" as="sourcePoint"/>
+            <mxPoint x="400" y="250" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
