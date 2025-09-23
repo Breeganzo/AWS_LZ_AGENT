@@ -1,0 +1,246 @@
+{
+  "questions": [
+    {
+      "id": "industry",
+      "question": "What industry best describes your organization?",
+      "description": "This helps us recommend industry-specific AWS services and compliance frameworks.",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        "Financial Services",
+        "Healthcare & Life Sciences",
+        "Retail & E-commerce",
+        "Manufacturing",
+        "Education",
+        "Government & Public Sector",
+        "Media & Entertainment",
+        "Technology & Software",
+        "Other"
+      ]
+    },
+    {
+      "id": "application_count",
+      "question": "How many applications do you plan to deploy in AWS?",
+      "description": "This affects the multi-account strategy and organizational unit structure.",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        "1-5 applications",
+        "6-20 applications",
+        "21-50 applications",
+        "51-100 applications",
+        "100+ applications"
+      ]
+    },
+    {
+      "id": "compliance_requirements",
+      "question": "Which compliance frameworks must your AWS environment support?",
+      "description": "Select all applicable compliance requirements for your organization.",
+      "type": "multiple_choice",
+      "required": false,
+      "options": [
+        "GDPR (General Data Protection Regulation)",
+        "HIPAA (Health Insurance Portability and Accountability Act)",
+        "PCI DSS (Payment Card Industry Data Security Standard)",
+        "SOX (Sarbanes-Oxley Act)",
+        "ISO 27001",
+        "FedRAMP (Federal Risk and Authorization Management Program)",
+        "NIST (National Institute of Standards and Technology)",
+        "SOC 2 (Service Organization Control 2)",
+        "FISMA (Federal Information Security Management Act)",
+        "None - No specific compliance requirements"
+      ]
+    },
+    {
+      "id": "data_residency",
+      "question": "Do you have specific data residency or regional compliance requirements?",
+      "description": "This affects AWS region selection and data sovereignty considerations.",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        "No regional restrictions - Global deployment acceptable",
+        "Data must remain within specific country/region",
+        "EU data residency required (GDPR compliance)",
+        "US data residency required",
+        "Asia-Pacific data residency required",
+        "Multi-region with data sovereignty controls"
+      ]
+    },
+    {
+      "id": "regions",
+      "question": "Which AWS regions will you primarily use?",
+      "description": "Select your primary and secondary regions for deployment.",
+      "type": "multiple_choice",
+      "required": true,
+      "options": [
+        "US East (N. Virginia) - us-east-1",
+        "US East (Ohio) - us-east-2",
+        "US West (Oregon) - us-west-2",
+        "US West (N. California) - us-west-1",
+        "Europe (Ireland) - eu-west-1",
+        "Europe (London) - eu-west-2",
+        "Europe (Frankfurt) - eu-central-1",
+        "Europe (Paris) - eu-west-3",
+        "Asia Pacific (Singapore) - ap-southeast-1",
+        "Asia Pacific (Tokyo) - ap-northeast-1",
+        "Asia Pacific (Sydney) - ap-southeast-2",
+        "Canada (Central) - ca-central-1",
+        "South America (São Paulo) - sa-east-1"
+      ]
+    },
+    {
+      "id": "security_level",
+      "question": "What is your required security posture?",
+      "description": "This determines the level of security controls and isolation needed.",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        "Standard - Basic AWS security best practices",
+        "Enhanced - Additional security controls and monitoring",
+        "High - Strict security with advanced threat protection",
+        "Maximum - Government/Military grade security requirements"
+      ]
+    },
+    {
+      "id": "workload_types",
+      "question": "What types of workloads will you be running?",
+      "description": "Select all workload types you plan to deploy on AWS.",
+      "type": "multiple_choice",
+      "required": true,
+      "options": [
+        "Web applications",
+        "Database systems",
+        "Big data and analytics",
+        "Machine learning and AI",
+        "Container-based applications",
+        "Serverless applications",
+        "Legacy application modernization",
+        "Backup and disaster recovery",
+        "Development and testing environments",
+        "IoT applications",
+        "Media processing and streaming",
+        "High-performance computing (HPC)"
+      ]
+    },
+    {
+      "id": "environment_strategy",
+      "question": "How do you want to organize your environments?",
+      "description": "This affects the account structure and organizational unit design.",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        "Single account for all environments",
+        "Separate accounts per environment (Dev, Test, Prod)",
+        "Separate accounts per application and environment",
+        "Separate accounts per team/business unit",
+        "Hub and spoke model with shared services"
+      ]
+    },
+    {
+      "id": "network_connectivity",
+      "question": "What network connectivity requirements do you have?",
+      "description": "This affects VPC design and hybrid connectivity options.",
+      "type": "multiple_choice",
+      "required": true,
+      "options": [
+        "Internet-only connectivity",
+        "Direct Connect to on-premises",
+        "VPN connectivity to on-premises",
+        "Hybrid cloud integration",
+        "Private connectivity to other cloud providers",
+        "Dedicated network for compliance",
+        "Global network with multiple regions"
+      ]
+    },
+    {
+      "id": "backup_recovery",
+      "question": "What are your backup and disaster recovery requirements?",
+      "description": "This determines the business continuity architecture design.",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        "Basic backup to S3",
+        "Cross-region backup and recovery",
+        "Multi-region disaster recovery",
+        "Real-time replication and failover",
+        "Compliance-driven backup retention",
+        "No specific requirements"
+      ]
+    },
+    {
+      "id": "cost_optimization",
+      "question": "What is your cost optimization priority?",
+      "description": "This affects resource sizing, reserved instances, and architectural decisions.",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        "Cost is not a primary concern",
+        "Moderate cost optimization",
+        "Aggressive cost optimization",
+        "Pay-as-you-go flexibility preferred",
+        "Predictable monthly costs preferred"
+      ]
+    },
+    {
+      "id": "team_size",
+      "question": "How large is your cloud operations team?",
+      "description": "This affects the level of automation and managed services recommended.",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        "No dedicated cloud team",
+        "1-5 cloud engineers",
+        "6-15 cloud engineers",
+        "16-50 cloud engineers",
+        "50+ cloud engineers",
+        "Outsourced to managed service provider"
+      ]
+    },
+    {
+      "id": "automation_level",
+      "question": "What level of automation do you want?",
+      "description": "This determines the infrastructure-as-code and CI/CD pipeline recommendations.",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        "Manual deployment and management",
+        "Basic automation with scripts",
+        "Infrastructure as Code (CloudFormation/Terraform)",
+        "Full CI/CD pipeline automation",
+        "GitOps with automated governance"
+      ]
+    },
+    {
+      "id": "monitoring_requirements",
+      "question": "What are your monitoring and observability requirements?",
+      "description": "This affects the monitoring, logging, and alerting architecture.",
+      "type": "multiple_choice",
+      "required": true,
+      "options": [
+        "Basic CloudWatch monitoring",
+        "Application performance monitoring (APM)",
+        "Custom metrics and dashboards",
+        "Log aggregation and analysis",
+        "Security monitoring and SIEM",
+        "Compliance reporting and audit trails",
+        "Real-time alerting and notifications",
+        "Third-party monitoring tools integration"
+      ]
+    },
+    {
+      "id": "timeline",
+      "question": "What is your implementation timeline?",
+      "description": "This affects the migration strategy and phasing approach.",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        "Immediate (within 1 month)",
+        "Short-term (1-3 months)",
+        "Medium-term (3-6 months)",
+        "Long-term (6-12 months)",
+        "Extended (12+ months)",
+        "Phased approach over multiple years"
+      ]
+    }
+  ]
+}

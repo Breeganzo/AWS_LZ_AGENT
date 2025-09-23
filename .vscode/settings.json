@@ -1,0 +1,14 @@
+{
+    "python.defaultInterpreterPath": "python",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/node_modules": true,
+        ".git": true,
+    },
+    "streamlit.runOnSave": false
+}
